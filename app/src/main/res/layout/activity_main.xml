@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/myImage"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:id="@+id/imgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/myImage"/>
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imgText"/>
+
+    <Button
+        android:id="@+id/btn_predict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:text="Prediction"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_upload"
+        />
+
+    <TextView
+        android:id="@+id/mytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/btn_predict"
+         />
+
+</RelativeLayout>
